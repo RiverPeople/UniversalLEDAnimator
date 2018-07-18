@@ -154,7 +154,7 @@ void setup()
   Serial.setTimeout(SERIAL_TIMEOUT);
   Serial.println(F("program starts ."));
 
-  BLESerial.setLocalName("UART");
+  BLESerial.setLocalName("UART2");
 
   // Init. and start BLE library.
   BLESerial.begin();
