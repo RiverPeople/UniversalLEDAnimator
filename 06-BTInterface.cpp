@@ -154,7 +154,7 @@ void setup()
   Serial.setTimeout(SERIAL_TIMEOUT);
   Serial.println(F("program starts ."));
 
-  BLESerial.setLocalName("UART2");
+  BLESerial.setLocalName("UART");
 
   // Init. and start BLE library.
   BLESerial.begin();
@@ -180,6 +180,19 @@ void loop() {
       case  5: color_bounce(); break;
       case  6: color_bounceFADE(); break;
       case  7: ems_lightsONE(); break;
+      case  8: random_color_pop(); break;
+      case  9: flicker(); break;
+      case 10: pulse_one_color_all(); break;
+      //case 16: radiation(); break;
+      //case 17: color_loop_vardelay(); break;
+      //case 18: white_temps(); break;
+      //case 19: sin_bright_wave(); break;
+      //case 20: pop_horizontal(); break;
+      //case 21: quad_bright_curve(); break;
+      case 11: flame(); break;
+      case 12: rainbow_vertical(); break;
+      //case 24: pacman(); break;
+      //case 26: ems_lightsSTROBE(); break;
     }
     //---PROCESS HARDWARE SERIAL COMMANDS AND ARGS
     while (BLESerial.available() > 0) {
