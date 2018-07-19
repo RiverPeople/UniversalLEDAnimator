@@ -1,27 +1,8 @@
+//Mostly unchanged code from Funkboxing's example
 
 #include <FastLED.h>
 #include <Arduino.h>
 #include "common.h"
-
-//LED SETUP
-#define LED_COUNT 47 //FOR TESTING w/ SIGN
-#define LED_DT 6 //SERIAL DATA PIN
-#define DATA_PIN 6
-#define LED_TYPE WS2811
-#define COLOR_ORDER GRB
-#define EVENODD LED_COUNT % 2
-#define TOP_INDEX int(LED_COUNT / 2)
-
-//---SERIAL/SOFTWARE SERIAL SETUP
-//#define SERIAL_BAUDRATE 9600
-#define SERIAL_BAUDRATE 57600
-//#define SERIAL_BAUDRATE 115200
-#define SERIAL_TIMEOUT 5
-
-#define SOFT_RX_PIN 2         // BTCHIP-TX -> NANO-SOFT-RX (2)
-#define SOFT_TX_PIN 3         // BTCHIP-RX -> NANO-SOFT-TX (3)
-
-
 
 
 

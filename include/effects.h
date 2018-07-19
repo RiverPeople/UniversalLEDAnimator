@@ -1,13 +1,6 @@
-/*
- * effects.h
- *
- *  Created on: Jul 4, 2018
- *      Author: ab
- */
-
 #ifndef EFFECTS_H_
 #define EFFECTS_H_
-
+//Mostly unchanged code from Funkboxing's example
 
 
 #include <FastLED.h>
